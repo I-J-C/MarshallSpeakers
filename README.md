@@ -1,2 +1,2 @@
 # MarshallSpeakers
-Offshoot website of the Marshall Speakers site selling new products
+Mock offshoot website of the Marshall Speakers site selling new products
