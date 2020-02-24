@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 24, 2020, 12:15:19 PM
+    Author     : 01791589
+*/
+
+            body {
+                background-color: #FAFAFA;
+            }
+            
+            .container {
+                display: grid;
+                grid-template-columns: 20px 1fr 800px 1fr 20px;
+                grid-template-rows: 700px 600px 700px auto 30px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                margin-top: 60px;
+            }
+
+            .heroImage{
+                background-image: url(img/about1.jpg);
+                background-size: cover;
+                grid-column-start: 1;
+                grid-column-end: auto;
+                grid-row-start: 1;
+                grid-row-end: 1;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-position: center;
+            }
+
+            .container #slogan {
+                grid-column-start: 3;
+                grid-column-end: auto;
+                grid-row-start: 1;
+                grid-row-end: auto;
+                text-align: center;
+                text-shadow: 2px 2px #000000;
+                font-size: 65px !important;
+                font-family: 'Coda Caption', sans-serif !important;
+                margin: 250px 0px 0px 0px;
+                z-index: 10;
+                font-size: 3em;
+                color: #FFFFFF; 
+                align-items: center;
+                display: block;
+            }
+            
+            #p1 {
+                font-family: 'Coda Caption', sans-serif !important;
+                text-shadow: 3px 3px #000000;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 50px !important;
+                font-weight: 600;
+                color: #FFFFFF !important;
+                z-index: 10;
+                font-size: 3em;
+                color: #FFFFFF; 
+                margin: 0px !important;
+            }
+            
+            #p1-1{
+                font-size: 25px;
+                font-family: 'Open Sans Condensed', sans-serif;
+                text-align: center;
+                display: block;
+            }
+            
+            .name {
+                height: 65px;
+                
+            }
+            
+            .name img {
+                width: 9em;
+                height: 3em;   
+                margin-top: 1em;
+                text-align: center;
+                margin-left: 12em;
+                margin-right: -8em;
+                float: left;
+            }
+            
+            .container #text1 {
+                grid-column-start: 3;
+                grid-column-end: auto;
+                grid-row-start: 2;
+                grid-row-end: auto;
+            }
+
+            .image1{
+                background-image: url(img/about2.jpg);
+                background-size: cover;
+                grid-column-start: 1;
+                grid-column-end: auto;
+                grid-row-start: 3;
+                grid-row-end: auto;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0px;
+                margin-top: 50px;
+            }
+            
+            .container #text2 {
+                grid-column-start: 3;
+                grid-column-end: auto;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+
+            @media screen and (max-width: 825px) {    
+                nav a:link, nav a:visited {
+                    padding: 10px 10px 15px 10px;
+                } 
+            }
+
+            @media screen and (max-width: 740px) {    
+                nav a:link, nav a:visited {
+                    padding: 10px 5px 15px 5px;
+
+                } 
+            }
+
+            @media screen and (max-width: 700px) {    
+                nav a:link, nav a:visited {
+                    padding: 10px 5px 15px 5px;
+                } 
+            }
+

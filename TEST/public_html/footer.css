@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 16, 2020, 10:14:42 PM
+    Author     : ilkac
+*/
+
+
+/*
+*******************INSERT THIS INTO HTML FOR ALL PAGES********************
+********Insert into Header*********
+<link href="footer.css" rel="stylesheet" type="text/css"/>
+<script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
+********Footer Text*******************************************************
+<footer>
+        <div class="footer">
+        <div class="socialMedia">
+            <a id="facebook" href="https://www.facebook.com/marshallheadphones/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a id="instagram" href="https://www.instagram.com/marshallheadphones/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a id="pintrest" href="https://www.pinterest.se/marshallhp/">
+                <i class="fab fa-pinterest-square"></i>
+            </a>
+            <a id="spotify" href="https://open.spotify.com/user/lyd6lrq78a2wmjd4q2n415g8h?si=Kg1mmNYoQPmDOQcnXmHX1Q">
+                <i class="fab fa-spotify"></i>
+            </a>
+        </div>
+        <div class="logo"><img src="content/images/Marshall_Logo_med.png" alt="Marshall Logo"/></div>
+        <div class="copyright">©2020 ZOUND INDUSTRIES. 
+            <br /> ALL RIGHTS RESERVED. ORG. NR</div>
+        </div>
+    </footer>
+***************************************************************************
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  align-content: space-between;
+  margin: auto;
+  position: absolute;
+  flex-wrap: nowrap;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+}
+.logo img {
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: inline-block;
+    object-fit: contain;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.socialMedia {
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    object-fit: contain;
+    flex-shrink: 1;
+    font-size: 2em;
+    flex-grow: 1;
+    margin: auto;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    padding: .5em;
+}
+
+.copyright {
+    flex: 1 1 auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    color: white;
+    margin: auto;
+    padding: .7em;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    object-fit: contain;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 830px) {
+    .footer {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    .logo {
+        max-width: 50%;
+        margin: auto;
+    }
+}
