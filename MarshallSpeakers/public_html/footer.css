@@ -53,7 +53,10 @@ html {
   margin: auto;
   position: absolute;
   flex-wrap: nowrap;
-  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   left: 0;
   bottom: 0;
 }
@@ -112,7 +115,9 @@ html {
     }
     
     .logo {
+        display: none;
         max-width: 50%;
+        height: auto;
         margin: auto;
     }
 }
