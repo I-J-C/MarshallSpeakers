@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2020, 7:04:21 PM
+    Author     : ilkac
+*/
+
+/* making the grid for the contacts, ratios tbd */
+html {
+    height: auto;
+    width: 100%;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.heroImage {
+    background-image: url(images/stanmore_contact_page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.email {
+    
+}
+.address {
+    
+}
