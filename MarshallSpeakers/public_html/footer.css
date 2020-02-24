@@ -11,6 +11,10 @@ and open the template in the editor.
 
 /*
 *******************INSERT THIS INTO HTML FOR ALL PAGES********************
+********Insert into Header*********
+<link href="footer.css" rel="stylesheet" type="text/css"/>
+<script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
+********Footer Text*******************************************************
 <footer>
         <div class="footer">
         <div class="socialMedia">
