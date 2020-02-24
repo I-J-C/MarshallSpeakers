@@ -51,7 +51,7 @@ html {
   height: auto;
   align-content: space-between;
   margin: auto;
-  position: absolute;
+  position: relative;
   flex-wrap: nowrap;
   margin-top: 10px;
   margin-bottom: 0;
@@ -111,7 +111,6 @@ html {
 @media screen and (max-width: 830px) {
     .footer {
         flex-direction: column;
-        flex-grow: 1;
     }
     
     .logo {
@@ -119,5 +118,6 @@ html {
         max-width: 50%;
         height: auto;
         margin: auto;
+        
     }
 }
