@@ -27,7 +27,7 @@ and open the template in the editor.
                 grid-template-columns: 20px 1fr 800px 1fr 20px;
                 grid-template-rows: 700px 600px 700px auto 30px;
                 position: absolute;
-                top: 0px;
+                top: 20px;
                 left: 0px;
                 width: 100%;
                 margin-top: 60px;
