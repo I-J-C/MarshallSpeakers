@@ -103,7 +103,7 @@
 }
 .colSpan3{
     grid-column-end: span 3;
-}
+}s
 .colSpan4{
     grid-column-end: span 4;
 }
