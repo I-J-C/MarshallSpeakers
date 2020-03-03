@@ -13,9 +13,14 @@ html {
     height: auto;
     width: 100%;
 }
+
 body{
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: #FAFAFA;
+}
+nav {
+    margin-bottom: 100px;
+    flex: 1 1 auto;
 }
 .container {
     display: flex;
@@ -25,6 +30,7 @@ body{
     overflow: hidden
 }
 .title {
+    margin-top: 10px; 
     flex: 1 1 auto;
     text-align: center;
     font-weight: bolder;
@@ -33,7 +39,6 @@ body{
 .heroImage {
     flex: 1 1 auto;
     background-image: url('../img/stanmore_contact_page.jpg');
-    margin-top
     display: block;
     background-postion: center;
     background-size: cover;
@@ -60,7 +65,7 @@ body{
     flex: 1 1 auto;
     background-postion: center;
     background-size: cover;
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 #img1.img {
@@ -72,5 +77,5 @@ body{
 }
 
 .img#img3 {
-
+    background-image: url('../img/hanwell_02.jpg');
 }
