@@ -56,7 +56,7 @@ footer {
   align-content: space-between;
   position: relative;
   flex-wrap: nowrap;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -131,7 +131,7 @@ footer {
     }
     
     .logo {
-        display: none;
+        /*display: none;*/
         /*The rest of this is if display: none is removed to keep the logo in a desirable location*/
         max-width: 50%;
         height: auto;

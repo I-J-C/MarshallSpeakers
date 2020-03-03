@@ -13,21 +13,15 @@ html {
     height: auto;
     width: 100%;
 }
-
 body{
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: #FAFAFA;
-}
-nav {
-    margin-bottom: 100px;
-    flex: 1 1 auto;
 }
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 75vh;
-    overflow: hidden
+    overflow: hidden;
 }
 .title {
     margin-top: 10px; 
@@ -39,30 +33,28 @@ nav {
 .heroImage {
     flex: 1 1 auto;
     background-image: url('../img/stanmore_contact_page.jpg');
-    display: block;
     background-postion: center;
     background-size: cover;
+    margin-bottom: 10px;
 }
 
 .contact {
     flex: 1 1 auto;
     margin-top: 10px;
-    justify-content: flex-start;
+    display: block;
 }
 
 .email a{
-    flex: 1 1 auto;
-    display: block;
     border: goldenrod;
     color: black;
     
 }
 .address {
-    flex: 1 1 auto;
+    flex: 1;
 }
 
 .img {
-    flex: 1 1 auto;
+    flex: 1;
     background-postion: center;
     background-size: cover;
     width: 75%;
