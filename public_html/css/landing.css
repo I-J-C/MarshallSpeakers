@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all .4s ease;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  
+.container {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.one, .two {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+}
+
+.one {
+  background-image: url('img/hanwell_112.jpg');
+}
+
+.one:hover {
+  flex: 1.5;
+}
+
+.two {
+  background-image: url('img/stanmore_16.jpg');
+}
+
+.two:hover {
+  flex: 1.5;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+.one .content {
+  background: linear-gradient(to right, rgba(20, 20, 20, 0.534),rgba(29, 29, 29, 0.842));
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.two .content {
+  background: linear-gradient(to right, rgba(24, 24, 24, 0.76), rgba(39, 39, 39, 0.336));
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.one .content h1, p {
+  color: white;
+  margin: 0px 7%;
+}
+.one .content h1 {
+  font-size: 2.5em;
+}
+
+.one .content p {
+  font-size: 1.2em;
+  text-align: justify;
+  max-width: 70%;
+}
+
+.two .content h1, p {
+  color: white;
+  margin: 0px 7%;
+}
+.two .content h1 {
+  font-size: 2.5em;
+}
+
+.two .content p {
+  font-size: 1.2em;
+  text-align: justify;
+  max-width: 70%;
+}
+
+
+ /* media queries */
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height:200vh;
+  }
+}
+
+
