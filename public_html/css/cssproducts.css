@@ -60,6 +60,9 @@ body{
   background-color: white;
   overflow: hidden;
 }
+.buttons1, .buttons{
+    text-align: center;
+}
 
 .footer {
 }
