@@ -20,7 +20,6 @@ body{
     grid-row-start: 1;
     grid-row-end: 4;
     background-color: #FAFAFA;
-    text-align: center;
     padding: 5px;
     border: 15px white solid;
 }
@@ -30,7 +29,6 @@ body{
     grid-row-start: 1;
     grid-row-end: 4;
     background-color: #FAFAFA;
-    text-align: center;
     padding: 5px;
     border: 15px white solid;
 }
@@ -61,4 +59,10 @@ body{
   display: none;
   background-color: white;
   overflow: hidden;
+}
+.buttons1, .buttons{
+    text-align: center;
+}
+
+.footer {
 }
