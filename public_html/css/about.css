@@ -24,7 +24,7 @@ and open the template in the editor.
             }
 
             .heroImage{
-                background-image: url(img/about1.jpg);
+                background-image: url(../img/about1.jpg);
                 background-size: cover;
                 grid-column-start: 1;
                 grid-column-end: auto;
@@ -32,7 +32,7 @@ and open the template in the editor.
                 grid-row-end: 1;
                 width: 100%;
                 height: 100%;
-                position: relative;
+                position: absolute;
                 background-position: center;
             }
 
@@ -97,7 +97,7 @@ and open the template in the editor.
             }
 
             .image1{
-                background-image: url(img/about2.jpg);
+                background-image: url(../img/about2.jpg);
                 background-size: cover;
                 grid-column-start: 1;
                 grid-column-end: auto;

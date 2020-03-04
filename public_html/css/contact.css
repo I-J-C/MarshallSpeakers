@@ -7,67 +7,201 @@ and open the template in the editor.
     Created on : Feb 17, 2020, 7:04:21 PM
     Author     : ilkac
 */
+@font-face {
+	font-family: 'marshallamp';
+	src: url(../img/Amplifyfont.ttf);
+}
 
-/* making the grid for the contacts, ratios tbd */
 html {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 body{
     font-family: 'Open Sans Condensed', sans-serif;
-    background-color: #FAFAFA;
+    background-image: linear-gradient(to right, #888, #444 );
 }
 .container {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .title {
-    margin-top: 10px; 
-    flex: 1 1 auto;
+    flex: 1;
+    font-size: xx-large;
+    font-family: 'marshallamp';
     text-align: center;
     font-weight: bolder;
     display: block;
+    color: white;
+    text-shadow: 2px 3px black;
 }
 .heroImage {
-    flex: 1 1 auto;
     background-image: url('../img/stanmore_contact_page.jpg');
-    background-postion: center;
     background-size: cover;
-    margin-bottom: 10px;
+    background-position: center;
+    min-height: 100vh;
+    height: auto;
 }
 
 .contact {
-    flex: 1 1 auto;
-    margin-top: 10px;
-    display: block;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    
 }
 
+.contactButton {
+  background-color: white; 
+  background-image: linear-gradient(to right, darkgrey, lightgrey );
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  margin: auto;
+}
+/* Email Button Styles*/
 .email a{
-    border: goldenrod;
     color: black;
     
 }
-.address {
-    flex: 1;
+
+.button {
+  background-color: #222; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid goldenrod;
+  margin-top: 15px;
+}
+.button:hover {
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    background-color: #EEE;
+    transition: .3s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* Image Styles */
 .img {
-    flex: 1;
-    background-postion: center;
-    background-size: cover;
-    width: 75%;
     height: auto;
+    min-height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-#img1.img {
-    background-image: url('../img/hanwell_01.jpg');
+.img1 {
+    background-image: url(../img/hanwell_01.jpg);
 }
 
-.img#img2 {
-    background-image: url('../img/stanmore_01.jpg');
+.img2 {
+    background-image: url(../img/stanmore_01.jpg);
 }
 
-.img#img3 {
-    background-image: url('../img/hanwell_02.jpg');
+.img3 {
+    background-image: url(../img/hanwell_02.jpg);
+}
+
+/* Columnn Styles */
+.colStart1{
+    grid-column-start: 1;
+}
+.colStart2{
+    grid-column-start: 2;
+}
+.colStart3{
+    grid-column-start: 3;
+}
+.colStart4{
+    grid-column-start: 4;
+}
+.colStart5{
+    grid-column-start: 5;
+}
+.colSpanAuto{
+    grid-column-end: auto;
+}
+.colSpan1{
+    grid-column-end: span 1;
+}
+.colSpan2{
+    grid-column-end: span 2;
+}
+.colSpan3{
+    grid-column-end: span 3;
+}
+.colSpan4{
+    grid-column-end: span 4;
+}
+.colSpan5{
+    grid-column-end: span 5;
+}
+/*Row Styles*/
+.rowStart1{
+    grid-row-start: 1;
+}
+.rowStart2{
+    grid-row-start: 2;
+}
+.rowStart3{
+    grid-row-start: 3;
+}
+.rowStart4{
+    grid-row-start: 4;
+}
+.rowStart5{
+    grid-row-start: 5;
+}
+.rowStart6{
+    grid-row-start: 6;
+}
+.rowStart7{
+    grid-row-start: 7;
+}
+.rowStart8{
+    grid-row-start: 8;
+}
+.rowStart9{
+    grid-row-start: 9;
+}
+.rowSpanAuto{
+    grid-row-end: auto;
+}
+.rowSpan1{
+    grid-row-end: span 1;
+}
+.rowSpan2{
+    grid-row-end: span 2;
+}
+.rowSpan3{
+    grid-row-end: span 3;
+}
+.rowSpan4{
+    grid-row-end: span 4;
+}
+.rowSpan5{
+    grid-row-end: span 5;
+}
+.rowSpan6{
+    grid-row-end: span 6;
+}
+.rowSpan7{
+    grid-row-end: span 7;
+}
+.rowSpan8{
+    grid-row-end: span 8;
+}
+.rowSpan9{
+    grid-row-end: span 9;
 }
