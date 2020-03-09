@@ -1,57 +1,40 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Feb 24, 2020, 12:28:37 PM
-    Author     : Brigitte Arcoite
-*/
-nav {
-    position: relative;
-    background-color: #231F20;
-    font-family: 'Fjalla One', sans-serif;                
-    width: 100%;
-    height: 4.25em;
-    top: 0px;
-    left: 0px;
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-nav ul {
-    background-color: #231F20;
-    list-style-type: none;
+nav{
+  height: 80px;
+  background: #231F20;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-nav li {
-    float: left;
-    background-color: #231F20;
+nav a img{
+  position: absolute;
+  width: 150px;
+  top: 17px;
+  left: 12%;
 }
 
-nav li:last-of-type{
-    float: right !important;
-    margin-right: 1em;
-    margin-top: -.5em;
+nav ul{
+  float: right;
+  margin-right: 25px;
 }
 
-nav li:last-of-type a {
-    padding: 0px;
-    width: 150px !important;
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
 }
 
-nav li img {
-    width: 9em;
-    height: 3em;
-}
-
-nav a:link, nav a:visited {
-    color: #FFFFFF;
-    display: block;
-    width: 100px;
-    text-align: center;
-    padding: 10px 20px 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-
+nav ul li a{
+  position: relative;
+  padding: 5px 0;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 nav li a:hover {
@@ -59,6 +42,235 @@ nav li a:hover {
     transition: .8s;
 }
 
-nav li:first-of-type  {
-    margin-right: 2em !important;
+/* underline hover thing */
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: goldenrod;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+  color: goldenrod;
+  transition: .4s;
+} 
+
+/* hamburger stuff */
+nav label #btn,
+nav label #cancel{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+nav label #btn:hover,
+nav label #cancel:hover{
+  color: goldenrod;
+  transition: .4s;
+}
+
+#check{
+  display: none;
+}
+
+/* media queries */
+@media (max-width: 1118px){
+  nav li a img{
+    left: 8%;
+  }
+}
+
+@media (max-width: 944px){
+  nav li a img{
+    width: 130px;
+    top: 20px;
+    left: 6%;
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 944px){
+  nav label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(54, 48, 50);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  /* hamburger links spacing */
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}
+* {
+	box-sizing: border-box;
+}
+
+#page-container {
+
+  }
+
+  #content-wrap {
+	    /* Footer height */
+  }
+
+  #footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;            /* Footer height */
+  }
+
+body {
+	font-family: 'Fjalla One', sans-serif;
+	line-height: 1.6;
+	margin: 0px;
+	min-height: 100vh;
+	background-color: #FFFFFF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li a {
+	font-family: 'Fjalla One', sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 1.4em;
+}
+/* adding the marshall font here */
+@font-face {
+	font-family: 'marshallamp';
+	src: url(../img/Amplifyfont.ttf);
+}
+
+.header .logo a {
+	margin: 0;
+	font-size: 1.9em;
+	text-decoration: none;
+	color:white;
+	font-family: 'marshallamp';
+	text-transform: none;
+	font-weight: 150;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.logo a, .main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+ .main-nav a {
+	color: white;
+	font-size: 1.5em;
+}
+
+.header .logo a:hover{
+	color: goldenrod;
+	transition: .8s;
+}
+
+.main-nav a:hover {
+    color: goldenrod;
+    transition: .8s;
+}
+
+/* underline hover thing */
+li a:after {
+	bottom: 1;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: relative;
+	background: goldenrod;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+  }
+
+li a:hover:after {
+	width: 100%; 
+	left: 0; 
+}
+
+.header {
+
+	padding-top: .3em;
+	padding-bottom: .3em;	
+	background-color: black;
+	/* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; */
+}
+
+
+/*Media Queries*/
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+        align-items: center;
+    }
+    	.header{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 }
