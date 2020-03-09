@@ -102,7 +102,7 @@ and open the template in the editor.
             }
 
             .image1{
-                background-image: url(../img/about2.jpg);
+                background-image: url('../img/about2.jpg');
                 background-size: cover;
                 grid-column-start: 1;
                 grid-column-end: auto;
@@ -133,7 +133,7 @@ and open the template in the editor.
             
             .HanwellImg {
                 margin-top: 25px;
-                background-image: url(../img/hanwell.jpg);
+                background-image: url('../img/hanwell.jpg');
                 background-size: cover;
                 background-position: center;
                 grid-column-start: 1;
