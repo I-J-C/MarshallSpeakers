@@ -9,10 +9,13 @@
                     </ul>       
             </header>
 */
+
+/* adding the marshall font here */
 @font-face {
 	font-family: 'marshallamp';
 	src: url(../img/Amplifyfont.ttf);
 }
+
 html {
     width: 100%;
     height: 100%;
@@ -42,8 +45,6 @@ li a {
 	text-decoration: none;
 	font-size: 1.4em;
 }
-/* adding the marshall font here */
-
 
 .header .logo a {
 	margin: 0;
@@ -100,17 +101,8 @@ li a:hover:after {
 }
 
 .header {
-
-	/*padding-top: .3em;
-	padding-bottom: .3em;*/
 	background-color: black;
         flex: 1;
-	/* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px; */
 }
 
 
