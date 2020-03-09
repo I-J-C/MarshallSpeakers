@@ -4,28 +4,33 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Feb 24, 2020, 12:15:19 PM
-    Author     : 01791589
+    Created on : Mar 8, 2020, 3:25:29 AM
+    Author     : Brigitte
 */
 
-            body {
+           body {
                 background-color: #FAFAFA;
             }
-            
+
             .container {
                 display: grid;
                 grid-template-columns: 20px 1fr 800px 1fr 20px;
-                grid-template-rows: 700px 600px 700px auto 30px;
-                position: relative;
+                grid-template-rows: 700px 400px 600px 550px 550px 150px;
+                position: absolute;
                 top: 0px;
                 left: 0px;
                 width: 100%;
                 margin-top: 60px;
             }
-
+            .header {
+                z-index: 100;
+                position: absolute;
+                width: 100%;
+            }
             .heroImage{
-                background-image: url(../img/about1.jpg);
+                background-image: url(https://theme.zdassets.com/theme_assets/717666/7fa4a3dc48378d933aef49e5031d91d0f50827be.jpg);
                 background-size: cover;
+                background-position: center;
                 grid-column-start: 1;
                 grid-column-end: auto;
                 grid-row-start: 1;
@@ -42,7 +47,7 @@ and open the template in the editor.
                 grid-row-start: 1;
                 grid-row-end: auto;
                 text-align: center;
-                text-shadow: 2px 2px #000000;
+                text-shadow: 4px 4px #000000;
                 font-size: 65px !important;
                 font-family: 'Coda Caption', sans-serif !important;
                 margin: 250px 0px 0px 0px;
@@ -53,14 +58,14 @@ and open the template in the editor.
                 display: block;
             }
             
+            
             #p1 {
-                font-family: 'Coda Caption', sans-serif !important;
-                text-shadow: 3px 3px #000000;
-                text-transform: uppercase;
+                font-family: 'marshallamp', sans-serif !important;
+                letter-spacing: 5px;          
+                text-shadow: 2px 2px 6px #231F20;
                 text-align: center;
                 font-size: 50px !important;
                 font-weight: 600;
-                color: #FFFFFF !important;
                 z-index: 10;
                 font-size: 3em;
                 color: #FFFFFF; 
@@ -70,7 +75,7 @@ and open the template in the editor.
             #p1-1{
                 font-size: 25px;
                 font-family: 'Open Sans Condensed', sans-serif;
-                text-align: center;
+                text-align: left;
                 display: block;
             }
             
@@ -102,26 +107,111 @@ and open the template in the editor.
                 grid-column-start: 1;
                 grid-column-end: auto;
                 grid-row-start: 3;
-                grid-row-end: auto;
+                grid-row-end: 3;
                 width: 100%;
                 height: 100%;
-                position: relative;
+                position: absolute;
                 left: 0px;
                 margin-top: 50px;
             }
             
-            .container #text2 {
+              .container #about {
                 grid-column-start: 3;
                 grid-column-end: auto;
-                grid-row-start: 5;
-                grid-row-end: 6;
+                grid-row-start: 3;
+                grid-row-end: auto;
+                text-align: center;
+                font-size: 65px !important;
+                font-family: 'marshallamp', sans-serif !important;
+                margin: 200px 0px 0px 0px;
+                z-index: 1;
+                font-size: 3em;
+                color: #231F20; 
+                align-items: center;
+                display: block;
             }
-
-            @media screen and (max-width: 825px) {    
-                nav a:link, nav a:visited {
+            
+            .HanwellImg {
+                margin-top: 25px;
+                background-image: url(../img/hanwell.jpg);
+                background-size: cover;
+                background-position: center;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 4;
+                grid-row-end: 4;              
+                width: 50%;
+                height: 100%;
+            }
+            
+            .p2 {
+                background-color: #ECEEED;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 4;
+                grid-row-end: 4;
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                right: 0px;
+                margin-top: 25px;
+                font-family: 'Open Sans Condensed', sans-serif;
+                text-align: left;        
+            }
+            
+            .p3 {
+                background-color: #ECEEED;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 5;
+                grid-row-end: 5; 
+                width: 50%;
+                height: 100%;
+                font-family: 'Open Sans Condensed', sans-serif;
+                text-align: left;
+            }
+            
+            .p2 p, .p3 p { 
+                margin-left: 20px;
+                margin-right: 20px;  
+                margin-top: 50px;
+            }
+                       
+            .one, .two {
+                margin-top: 120px;
+                font-size: 25px;
+            }
+            
+            
+            .amp {
+                background-image: url(../img/amp.jpg);
+                background-size: cover;
+                background-position: 400px -150px;
+                background-repeat: no-repeat;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 5;
+                s:visited {
                     padding: 10px 10px 15px 10px;
                 } 
             }
+
+            footer {
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 6;
+                grid-row-end: 6;
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+            }
+
+            /* adding the marshall font here */
+            @font-face {
+                font-family: 'marshallamp';
+                src: url(img/Amplifyfont.ttf);
+            }
+
 
             @media screen and (max-width: 740px) {    
                 nav a:link, nav a:visited {
@@ -135,4 +225,5 @@ and open the template in the editor.
                     padding: 10px 5px 15px 5px;
                 } 
             }
-
+            
+            
