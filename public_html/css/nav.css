@@ -5,163 +5,15 @@
   text-decoration: none;
 }
 
-nav{
-  height: 80px;
-  background: #231F20;
-  font-family: 'Fjalla One', sans-serif;
-}
-
-nav a img{
-  position: absolute;
-  width: 150px;
-  top: 17px;
-  left: 12%;
-}
-
-nav ul{
-  float: right;
-  margin-right: 25px;
-}
-
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 15px;
-}
-
-nav ul li a{
-  position: relative;
-  padding: 5px 0;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-nav li a:hover {
-    color: goldenrod;
-    transition: .8s;
-}
-
-/* underline hover thing */
-nav ul li a:before{
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: goldenrod;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .4s linear;
-}
-
-nav ul li a:hover:before{
-  transform: scaleX(1);
-  transform-origin: left;
-  color: goldenrod;
-  transition: .4s;
-} 
-
-/* hamburger stuff */
-nav label #btn,
-nav label #cancel{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-nav label #btn:hover,
-nav label #cancel:hover{
-  color: goldenrod;
-  transition: .4s;
-}
-
-#check{
-  display: none;
-}
-
-/* media queries */
-@media (max-width: 1118px){
-  nav li a img{
-    left: 8%;
-  }
-}
-
-@media (max-width: 944px){
-  nav li a img{
-    width: 130px;
-    top: 20px;
-    left: 6%;
-  }
-  nav ul li a{
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 944px){
-  nav label #btn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgb(54, 48, 50);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  /* hamburger links spacing */
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-  #check:checked ~ label #btn{
-    display: none;
-  }
-  #check:checked ~ label #cancel{
-    display: block;
-  }
-}
-* {
-	box-sizing: border-box;
-}
-
-#page-container {
-
-  }
-
-  #content-wrap {
-	    /* Footer height */
-  }
-
-  #footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 2.5rem;            /* Footer height */
-  }
-
 body {
 	font-family: 'Fjalla One', sans-serif;
 	line-height: 1.6;
 	margin: 0px;
 	min-height: 100vh;
-	background-color: #FFFFFF;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 ul {
@@ -241,12 +93,7 @@ li a:hover:after {
 	padding-top: .3em;
 	padding-bottom: .3em;	
 	background-color: black;
-	/* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px; */
+
 }
 
 
@@ -261,10 +108,10 @@ li a:hover:after {
 		flex-direction: column;
         align-items: center;
     }
-    	.header{
-		width: 100%;
-		margin: 0 auto;
-	}
+    .header{
+      width: 100%;
+      margin: 0 auto;
+    }
 }
 
 @media (min-width: 1025px) {

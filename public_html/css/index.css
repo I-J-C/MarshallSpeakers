@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    transition: all .4s ease-in;
     font-family: 'Fjalla One', sans-serif;
   }
 
@@ -9,6 +10,7 @@
   height: 75vh;
   overflow: hidden;
   display: flex;
+  margin-bottom: 0;
 }
 
 .one, .two {
